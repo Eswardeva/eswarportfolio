@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eswar D — Software Engineer & Creative Leader</title>
+  <meta name="description" content="Portfolio of Eswar D: Final-Year Computer Science Engineer, Python & Flask Developer, and Fine Arts Club President at AVIT, Chennai." />
+  <meta name="author" content="Eswar D" />
+  <meta name="theme-color" content="#090a0f" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23090a0f%22/><text x=%2250%22 y=%2266%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23fbbf24%22 font-family=%22system-ui,sans-serif%22 font-weight=%22bold%22>E</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-hybrid">
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Eswar D Portfolio Home">
+        <span class="logo-box">ED</span>
+        <span class="logo-text">eswar<span class="accent-dot">.</span>dev</span>
+      </a>
+
+      <!-- Perspective Mode Switcher -->
+      <div class="perspective-switch" role="group" aria-label="Perspective View Switcher">
+        <button class="mode-btn active" data-mode="hybrid" title="View complete hybrid portfolio">
+          <span class="mode-icon">✦</span>
+          <span class="mode-text">All Dimensions</span>
+        </button>
+        <button class="mode-btn" data-mode="engineer" title="Filter for Technical / Software Engineering focus">
+          <span class="mode-icon">💻</span>
+          <span class="mode-text">Code &amp; Systems</span>
+        </button>
+        <button class="mode-btn" data-mode="leader" title="Filter for Leadership &amp; Fine Arts Presidency focus">
+          <span class="mode-icon">🎭</span>
+          <span class="mode-text">Creative &amp; Leadership</span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#terminal-section" class="nav-link terminal-link"><span class="term-icon">&gt;_</span> CLI</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="Eswar_D_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          <span>Resume</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Connect</span>
+        </a>
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        
+        <!-- Left: Intro & Persona -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span class="status-text">Available for Software Engineer / Python Developer roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering solid software,
+            <span class="gradient-text">commanding the stage.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            I'm <strong class="highlight-name">Eswar D</strong> — a final-year Computer Science student at AVIT, Chennai. 
+            I build robust backend systems with <span class="tag-inline">Python</span>, <span class="tag-inline">Flask</span>, and <span class="tag-inline">MySQL</span>, 
+            and lead campus culture as <span class="tag-inline gold">Fine Arts Club President</span>.
+          </p>
+
+          <!-- Dynamic Perspective Blurb -->
+          <div class="perspective-indicator-card" id="perspectiveNotice">
+            <div class="indicator-icon">⚡</div>
+            <div class="indicator-text">
+              <strong id="perspectiveTitle">Hybrid Dimension Active:</strong>
+              <span id="perspectiveDesc">Displaying both full-stack engineering fundamentals and cross-functional leadership milestones.</span>
+            </div>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-cta-group">
+            <a href="Eswar_D_Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-lg">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <button class="btn btn-terminal btn-lg" onclick="scrollToTerminal()">
+              <span class="term-symbol">&gt;_</span>
+              <span>Launch Terminal</span>
+            </button>
+          </div>
+
+          <!-- Quick Stats Ribbon -->
+          <div class="hero-stats-ribbon">
+            <div class="stat-item">
+              <span class="stat-number">8.1</span>
+              <span class="stat-label">B.E. CSE CGPA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2027</span>
+              <span class="stat-label">Graduation Year</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Students Rallied</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Languages Spoken</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Interactive Portrait Card -->
+        <div class="hero-visual">
+          <div class="portrait-card-wrapper" id="portraitTilt">
+            <div class="portrait-card">
+              <!-- Glow backplate -->
+              <div class="card-glow" aria-hidden="true"></div>
+              
+              <!-- User Photo -->
+              <div class="photo-frame">
+                <img src="eswar.jpg" alt="Portrait of Eswar D" class="portrait-img" id="heroPhoto" />
+                <div class="photo-overlay-gradient"></div>
+                
+                <!-- Corner Watermark -->
+                <div class="photo-location-tag">
+                  <span class="pin-icon">📍</span>
+                  <span>Chennai, Tamil Nadu</span>
+                </div>
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right glass-panel">
+                <span class="badge-icon">👑</span>
+                <div class="badge-text">
+                  <span class="badge-sub">Leadership</span>
+                  <span class="badge-main">Fine Arts President</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left glass-panel">
+                <span class="badge-icon">🐍</span>
+                <div class="badge-text">
+                  <span class="badge-sub">Backend Core</span>
+                  <span class="badge-main">Python &amp; Flask</span>
+                </div>
+              </div>
+
+              <!-- Micro Status Bar -->
+              <div class="card-footer-bar glass-panel">
+                <div class="pulse-ring"></div>
+                <div class="footer-info">
+                  <span class="f-name">Eswar D</span>
+                  <span class="f-role">Final-Year CSE @ AVIT (VMRF-DU)</span>
+                </div>
+                <div class="social-pills">
+                  <a href="https://github.com/Eswardeva" target="_blank" rel="noopener" title="GitHub" class="s-pill">GH</a>
+                  <a href="https://linkedin.com/in/eswar-d-475441379" target="_blank" rel="noopener" title="LinkedIn" class="s-pill">IN</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE DUAL IDENTITY / ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Identity &amp; Philosophy</span>
+          <h2 class="section-title">Where Code Meets Charisma</h2>
+          <p class="section-description">
+            Most developers operate strictly behind screens. I bridge the gap between technical architecture and high-stakes organizational execution.
+          </p>
+        </div>
+
+        <div class="about-bento-grid">
+          
+          <!-- Card 1: Technical Foundation -->
+          <div class="bento-card bento-engineer" data-dimension="engineer">
+            <div class="bento-icon-box">💻</div>
+            <div class="bento-header">
+              <span class="bento-subtitle">Software Engineering</span>
+              <h3 class="bento-title">Pragmatic Systems Builder</h3>
+            </div>
+            <p class="bento-text">
+              Pursuing my Bachelor's in <strong>Computer Science &amp; Engineering at AVIT (8.1 CGPA)</strong>. 
+              My focus is on structured backend development in <strong>Python, Flask, and SQL</strong>, 
+              writing clean data models, reliable RESTful routes, and role-enforced databases.
+            </p>
+            <div class="bento-tags">
+              <span class="pill-chip">Python 3</span>
+              <span class="pill-chip">Flask REST</span>
+              <span class="pill-chip">MySQL RDBMS</span>
+              <span class="pill-chip">C++ Fundamentals</span>
+              <span class="pill-chip">Java Basics</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Creative & Leadership -->
+          <div class="bento-card bento-leader" data-dimension="leader">
+            <div class="bento-icon-box gold-icon">🎭</div>
+            <div class="bento-header">
+              <span class="bento-subtitle">Campus &amp; Team Culture</span>
+              <h3 class="bento-title">President, Fine Arts Club</h3>
+            </div>
+            <p class="bento-text">
+              Leading the college-wide arts council means managing real budgets, coordinating inter-departmental logistics, 
+              directing 50+ organizers, and engaging 1000+ attendees. It gave me the grit to solve live incidents under pressure 
+              and rally people toward a shared finish line.
+            </p>
+            <div class="bento-tags">
+              <span class="pill-chip gold">Event Production</span>
+              <span class="pill-chip gold">Stakeholder Sync</span>
+              <span class="pill-chip gold">Stage Presence</span>
+              <span class="pill-chip gold">Conflict Resolution</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Philosophy / Execution -->
+          <div class="bento-card bento-wide">
+            <div class="bento-quote-box">
+              <span class="quote-mark">“</span>
+              <blockquote class="manifesto-quote">
+                Writing clean code is essential, but rallying people to adopt, trust, and ship that code is what turns engineering into impact.
+              </blockquote>
+              <div class="quote-author">
+                <strong>Eswar D</strong> — Ready to build and learn in high-velocity tech teams
+              </div>
+            </div>
+            <div class="bento-metrics-row">
+              <div class="b-metric">
+                <span class="m-val">100%</span>
+                <span class="m-lbl">Committed to Growth</span>
+              </div>
+              <div class="b-metric">
+                <span class="m-val">Clean</span>
+                <span class="m-lbl">Code Architecture</span>
+              </div>
+              <div class="b-metric">
+                <span class="m-val">Immediate</span>
+                <span class="m-lbl">Joining Availability</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED PROJECT / LMS DEEP-DIVE -->
+    <section id="projects" class="section projects-section" data-dimension="engineer">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Featured Engineering Showcase</span>
+          <h2 class="section-title">Student Learning Management System (SLMS)</h2>
+          <p class="section-description">
+            A full-stack institutional platform engineered to streamline attendance logging, academic grade tracking, and parent communication loops through a unified relational schema.
+          </p>
+        </div>
+
+        <div class="project-showcase-box">
+          <!-- Left: Architecture & Module Inspector -->
+          <div class="project-details">
+            <div class="project-badge-row">
+              <span class="stack-badge python">Python</span>
+              <span class="stack-badge flask">Flask Microframework</span>
+              <span class="stack-badge mysql">MySQL Database</span>
+              <span class="stack-badge rbac">Role-Based Access (RBAC)</span>
+            </div>
+
+            <h3 class="project-name">Multi-Tenant Campus Academic Core</h3>
+            
+            <p class="project-summary">
+              Traditional academic record-keeping in colleges suffers from fragmented spreadsheets and delayed grade visibility. 
+              The SLMS centralizes student lifecycle data into normalized MySQL tables, providing role-segregated dashboards and automated notification channels.
+            </p>
+
+            <!-- Interactive Tab Selector for Modules -->
+            <div class="lms-tabs" role="tablist">
+              <button class="lms-tab active" data-tab="tab-rbac">
+                <span class="t-icon">🔐</span>
+                <span>Role-Based Access</span>
+              </button>
+              <button class="lms-tab" data-tab="tab-attendance">
+                <span class="t-icon">📅</span>
+                <span>Attendance Engine</span>
+              </button>
+              <button class="lms-tab" data-tab="tab-grades">
+                <span class="t-icon">📊</span>
+                <span>Grade Tracking</span>
+              </button>
+              <button class="lms-tab" data-tab="tab-notify">
+                <span class="t-icon">🔔</span>
+                <span>Parent Alerts</span>
+              </button>
+            </div>
+
+            <!-- Tab Content Panels -->
+            <div class="lms-tab-content active" id="tab-rbac">
+              <h4>Strict Permission Boundaries for 3 Tiers:</h4>
+              <ul class="feature-bullets">
+                <li><strong>Admin:</strong> System configuration, batch student enrollments, faculty assignations, and institutional audit logs.</li>
+                <li><strong>Faculty:</strong> Daily attendance roll-call, term mark entry, student performance flags, and report sheet exports.</li>
+                <li><strong>Students &amp; Parents:</strong> Read-only real-time metrics, cumulative percentage calculation, and automated shortage warnings.</li>
+              </ul>
+            </div>
+
+            <div class="lms-tab-content" id="tab-attendance">
+              <h4>Zero-Friction Daily Roll-Call &amp; Analytics:</h4>
+              <ul class="feature-bullets">
+                <li>Session-based attendance logger cutting faculty input time from minutes to clicks.</li>
+                <li>Dynamic attendance percentage calculation with automated color alerts (&lt;75% threshold).</li>
+                <li>Centralized SQL joins across courses, semesters, and individual student profiles.</li>
+              </ul>
+            </div>
+
+            <div class="lms-tab-content" id="tab-grades">
+              <h4>Academic Performance Ledger:</h4>
+              <ul class="feature-bullets">
+                <li>Internal assessment mark entry with automated grade weighting and GPA projection.</li>
+                <li>Downloadable academic transcripts and tabular semester performance reports.</li>
+                <li>Visual trend indicators highlighting subjects requiring remedial support.</li>
+              </ul>
+            </div>
+
+            <div class="lms-tab-content" id="tab-notify">
+              <h4>Automated Stakeholder Alert Channels:</h4>
+              <ul class="feature-bullets">
+                <li>Automated alert triggers when attendance drops below mandated university criteria.</li>
+                <li>Parent notification loop bridging faculty feedback with home guardians.</li>
+                <li>Eliminates end-of-semester shock by providing weekly transparency.</li>
+              </ul>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Eswardeva" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>View on GitHub</span>
+              </a>
+              <button class="btn btn-secondary" onclick="runLmsTerminalDemo()">
+                <span>Simulate in CLI</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Simulation Mockup -->
+          <div class="project-mockup-wrapper">
+            <div class="mockup-frame">
+              <div class="mockup-top-bar">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <div class="url-bar">https://avit-slms.internal/dashboard/analytics</div>
+                <div class="role-selector">
+                  <span class="role-pill">Role: Faculty</span>
+                </div>
+              </div>
+
+              <div class="mockup-body">
+                
+                <!-- Mock Top Metric Row -->
+                <div class="mock-metrics">
+                  <div class="mock-card">
+                    <span class="m-label">Active Enrolled</span>
+                    <span class="m-number">128</span>
+                    <span class="m-trend positive">↑ 100% active</span>
+                  </div>
+                  <div class="mock-card">
+                    <span class="m-label">Avg Attendance</span>
+                    <span class="m-number">88.4%</span>
+                    <span class="m-trend positive">Above 75% target</span>
+                  </div>
+                  <div class="mock-card">
+                    <span class="m-label">Low Attendance Alerts</span>
+                    <span class="m-number caution">4</span>
+                    <span class="m-trend warning">Notified parents</span>
+                  </div>
+                </div>
+
+                <!-- Mock Table View -->
+                <div class="mock-table-container">
+                  <div class="table-title">Recent Student Records — CSE Batch 2023–2027</div>
+                  <table class="mock-table">
+                    <thead>
+                      <tr>
+                        <th>Reg No</th>
+                        <th>Student Name</th>
+                        <th>Attendance</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>AVIT-CS-101</td>
+                        <td>Eswar D</td>
+                        <td><div class="progress-bar"><div class="fill" style="width: 92%;"></div></div> 92%</td>
+                        <td><span class="badge-good">Excellent</span></td>
+                        <td><button class="tbl-btn" onclick="mockAction('Eswar D')">View</button></td>
+                      </tr>
+                      <tr>
+                        <td>AVIT-CS-104</td>
+                        <td>Karthik R</td>
+                        <td><div class="progress-bar"><div class="fill" style="width: 84%;"></div></div> 84%</td>
+                        <td><span class="badge-good">Good</span></td>
+                        <td><button class="tbl-btn" onclick="mockAction('Karthik R')">View</button></td>
+                      </tr>
+                      <tr>
+                        <td>AVIT-CS-112</td>
+                        <td>Sanjay M</td>
+                        <td><div class="progress-bar"><div class="fill warning" style="width: 71%;"></div></div> 71%</td>
+                        <td><span class="badge-warn">Alert Sent</span></td>
+                        <td><button class="tbl-btn" onclick="mockAction('Sanjay M')">Notify</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Flask API Snippet Preview -->
+                <div class="code-preview-box">
+                  <div class="code-header">
+                    <span>app/routes/attendance.py</span>
+                    <span class="lang-tag">Python / Flask</span>
+                  </div>
+                  <pre class="code-snippet"><code><span class="k">@attendance_bp.route</span>(<span class="s">'/log'</span>, methods=[<span class="s">'POST'</span>])
+<span class="k">@require_role</span>(<span class="s">'FACULTY'</span>)
+<span class="k">def</span> <span class="f">record_attendance</span>():
+    data = request.get_json()
+    db.session.bulk_insert_mappings(Attendance, data[<span class="s">'records'</span>])
+    trigger_parent_alerts_if_below_threshold(data[<span class="s">'course_id'</span>])
+    <span class="k">return</span> jsonify({<span class="s">"status"</span>: <span class="s">"synced"</span>, <span class="s">"count"</span>: len(data[<span class="s">'records'</span>])})</code></pre>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: SKILLS MATRIX -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Skills &amp; Toolkit</span>
+          <h2 class="section-title">The Engineering &amp; Operations Stack</h2>
+          <p class="section-description">
+            A transparent inventory of what I build with daily, from database design to developer tooling and team orchestration.
+          </p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="skills-filter-bar">
+          <button class="filter-pill active" data-filter="all">All Skills</button>
+          <button class="filter-pill" data-filter="backend">Backend &amp; Languages</button>
+          <button class="filter-pill" data-filter="database">Data &amp; Systems</button>
+          <button class="filter-pill" data-filter="tools">Developer Tools</button>
+          <button class="filter-pill" data-filter="leadership">Leadership &amp; Execution</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Skill: Python -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🐍</span>
+              <span class="skill-tier">Core Specialty</span>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">Object-oriented programming, data structures, script automation, and backend business logic.</p>
+            <div class="skill-usage-tag">LMS Backend, Automation Scripts</div>
+          </div>
+
+          <!-- Skill: Flask -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🌶️</span>
+              <span class="skill-tier">Framework</span>
+            </div>
+            <h3 class="skill-title">Flask</h3>
+            <p class="skill-desc">REST API design, modular Blueprints, session handling, authentication, and Jinja templating.</p>
+            <div class="skill-usage-tag">Role-Based Web Services</div>
+          </div>
+
+          <!-- Skill: MySQL / SQL -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🐬</span>
+              <span class="skill-tier">Relational DB</span>
+            </div>
+            <h3 class="skill-title">SQL &amp; MySQL</h3>
+            <p class="skill-desc">Relational schema modeling, multi-table joins, primary/foreign key constraints, and indexing.</p>
+            <div class="skill-usage-tag">Institutional Grade Databases</div>
+          </div>
+
+          <!-- Skill: C++ -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-header">
+              <span class="tech-icon">⚡</span>
+              <span class="skill-tier">Foundations</span>
+            </div>
+            <h3 class="skill-title">C++</h3>
+            <p class="skill-desc">Core algorithms, memory principles, procedural and object-oriented foundations.</p>
+            <div class="skill-usage-tag">Academic Coursework &amp; Problem Solving</div>
+          </div>
+
+          <!-- Skill: Java -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-header">
+              <span class="tech-icon">☕</span>
+              <span class="skill-tier">Fundamentals</span>
+            </div>
+            <h3 class="skill-title">Java (Basics)</h3>
+            <p class="skill-desc">OOP hierarchy, classes, inheritance, interfaces, and core syntax fundamentals.</p>
+            <div class="skill-usage-tag">Engineering Curriculum</div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🐙</span>
+              <span class="skill-tier">Version Control</span>
+            </div>
+            <h3 class="skill-title">Git &amp; GitHub</h3>
+            <p class="skill-desc">Branching, commit conventions, pull requests, conflict resolution, and open repository management.</p>
+            <div class="skill-usage-tag">github.com/Eswardeva</div>
+          </div>
+
+          <!-- Skill: Dev Environment -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🛠️</span>
+              <span class="skill-tier">Toolchain</span>
+            </div>
+            <h3 class="skill-title">VS Code &amp; PowerShell</h3>
+            <p class="skill-desc">Configured workspaces, extensions, terminal CLI workflows, PowerShell scripting, and debugging.</p>
+            <div class="skill-usage-tag">Primary Daily Environment</div>
+          </div>
+
+          <!-- Skill: Colab & Jupyter -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-header">
+              <span class="tech-icon">📓</span>
+              <span class="skill-tier">Exploratory</span>
+            </div>
+            <h3 class="skill-title">Jupyter &amp; Google Colab</h3>
+            <p class="skill-desc">Data analysis prototyping, mathematical modeling, and interactive script experiments.</p>
+            <div class="skill-usage-tag">Algorithmic Prototyping</div>
+          </div>
+
+          <!-- Skill: Team Leadership -->
+          <div class="skill-card" data-category="leadership">
+            <div class="skill-icon-header">
+              <span class="tech-icon">👑</span>
+              <span class="skill-tier">Leadership</span>
+            </div>
+            <h3 class="skill-title">Executive Leadership</h3>
+            <p class="skill-desc">Presiding over Fine Arts Club, rallying 50+ staff across stage, tech, finance, and logistics.</p>
+            <div class="skill-usage-tag">Elected Club President</div>
+          </div>
+
+          <!-- Skill: Event Operations -->
+          <div class="skill-card" data-category="leadership">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🎪</span>
+              <span class="skill-tier">Execution</span>
+            </div>
+            <h3 class="skill-title">Large-Scale Operations</h3>
+            <p class="skill-desc">End-to-end planning of college festivals, timeline management, crisis mitigation, and vendor coordination.</p>
+            <div class="skill-usage-tag">Campus Cultural Festivals</div>
+          </div>
+
+          <!-- Skill: Communication -->
+          <div class="skill-card" data-category="leadership">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🎙️</span>
+              <span class="skill-tier">Interpersonal</span>
+            </div>
+            <h3 class="skill-title">Public Speaking &amp; Comms</h3>
+            <p class="skill-desc">Hosting ceremonies, representing AVIT at intercollegiate meets, and clear technical team handoffs.</p>
+            <div class="skill-usage-tag">Trilingual Communicator</div>
+          </div>
+
+          <!-- Skill: Adaptability -->
+          <div class="skill-card" data-category="leadership">
+            <div class="skill-icon-header">
+              <span class="tech-icon">🧠</span>
+              <span class="skill-tier">Soft Skill</span>
+            </div>
+            <h3 class="skill-title">Rapid Adaptability</h3>
+            <p class="skill-desc">Fast learner under evolving requirements, welcoming peer review, and maintaining positive team energy.</p>
+            <div class="skill-usage-tag">Team Player Mindset</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LEADERSHIP TIMELINE / IMPACT -->
+    <section id="leadership" class="section leadership-section" data-dimension="leader">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag gold">Impact Beyond Code</span>
+          <h2 class="section-title">The Fine Arts Club Presidential Journey</h2>
+          <p class="section-description">
+            Leading at AVIT taught me how organizations actually operate: managing timelines, resolving frictions, negotiating resources, and delivering experiences that people remember.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="role-badge">Elected President</span>
+                <span class="date-badge">AVIT Chennai • 2023 – Present</span>
+              </div>
+              <h3 class="t-role-title">President, Fine Arts Club (VMRF-DU)</h3>
+              <p class="t-description">
+                Directing the institutional cultural body, steering all flagship annual events, budget planning, and student artist incubations.
+              </p>
+              <div class="impact-grid">
+                <div class="impact-box">
+                  <span class="i-metric">50+</span>
+                  <span class="i-label">Student Coordinators Led</span>
+                </div>
+                <div class="impact-box">
+                  <span class="i-metric">1000+</span>
+                  <span class="i-label">Students Engaged</span>
+                </div>
+                <div class="impact-box">
+                  <span class="i-metric">15+</span>
+                  <span class="i-label">Festivals &amp; Events Orchestrated</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="role-badge">Intercollegiate Representation</span>
+                <span class="date-badge">State &amp; National Levels</span>
+              </div>
+              <h3 class="t-role-title">Institutional Ambassador &amp; Competitor</h3>
+              <p class="t-description">
+                Selected to represent Aarupadai Veedu Institute of Technology at intercollegiate cultural symposiums and technical conferences across Tamil Nadu.
+              </p>
+              <ul class="t-bullet-list">
+                <li>Showcased AVIT talent in competitive inter-college circuits.</li>
+                <li>Built cross-college partnerships for student knowledge exchange.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="role-badge">Community &amp; Campus Service</span>
+                <span class="date-badge">Campus Engagements</span>
+              </div>
+              <h3 class="t-role-title">Cross-Club Volunteering &amp; Mentorship</h3>
+              <p class="t-description">
+                Collaborated with technical forums, department symposiums, and community outreach campaigns to foster campus-wide solidarity and student peer mentoring.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: EDUCATION & CREDENTIALS BENTO -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Education &amp; Credentials</span>
+          <h2 class="section-title">Academic Foundations</h2>
+          <p class="section-description">
+            Consistent academic performance paired with verified programming certifications and multilingual fluency.
+          </p>
+        </div>
+
+        <div class="edu-bento-grid">
+          
+          <!-- Card: College Degree -->
+          <div class="edu-card main-degree">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-timeline-tag">2023 — 2027 (Final Year)</div>
+            <h3 class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</h3>
+            <p class="edu-institution">Aarupadai Veedu Institute of Technology (AVIT) — VMRF-DU, Chennai</p>
+            <div class="cgpa-badge">
+              <span class="cgpa-label">Cumulative GPA</span>
+              <span class="cgpa-value">8.1 / 10.0</span>
+            </div>
+            <p class="edu-focus">
+              Key coursework: Data Structures, Database Management Systems (DBMS), Operating Systems, Software Engineering, Object-Oriented Programming, Computer Networks.
+            </p>
+          </div>
+
+          <!-- Card: High School -->
+          <div class="edu-card secondary-edu">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-timeline-tag">2020 — 2022</div>
+            <h3 class="edu-degree">Higher Secondary Education (HSC)</h3>
+            <p class="edu-institution">Bharathi Matric Higher Secondary School, Kallakurichi</p>
+            <div class="cgpa-badge secondary">
+              <span class="cgpa-label">Final Board Score</span>
+              <span class="cgpa-value">73%</span>
+            </div>
+            <p class="edu-focus">
+              Major in Mathematics, Physics, Chemistry, and Computer Science fundamentals.
+            </p>
+          </div>
+
+          <!-- Card: Certifications -->
+          <div class="edu-card cert-card">
+            <div class="edu-icon">📜</div>
+            <h3 class="edu-card-title">Verified Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-indicator python"></div>
+                <div class="cert-details">
+                  <strong>Python Programming Certification</strong>
+                  <span>Core syntax, OOP concepts, automation logic</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-indicator c-lang"></div>
+                <div class="cert-details">
+                  <strong>C Programming Foundations</strong>
+                  <span>Memory allocation, pointers, procedural control flow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Languages -->
+          <div class="edu-card lang-card">
+            <div class="edu-icon">🌐</div>
+            <h3 class="edu-card-title">Languages Spoken</h3>
+            <div class="lang-bars">
+              <div class="lang-row">
+                <div class="l-info">
+                  <span class="l-name">English</span>
+                  <span class="l-prof">Fluent (Professional)</span>
+                </div>
+                <div class="l-track"><div class="l-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="lang-row">
+                <div class="l-info">
+                  <span class="l-name">Tamil</span>
+                  <span class="l-prof">Native Speaker</span>
+                </div>
+                <div class="l-track"><div class="l-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="lang-row">
+                <div class="l-info">
+                  <span class="l-name">Kannada</span>
+                  <span class="l-prof">Conversational / Spoken</span>
+                </div>
+                <div class="l-track"><div class="l-fill" style="width: 70%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE CLI TERMINAL -->
+    <section id="terminal-section" class="section terminal-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">&gt;_ Developer Console</span>
+          <h2 class="section-title">Interactive Terminal</h2>
+          <p class="section-description">
+            For recruiters and engineers who prefer a shell. Click the quick commands below or type in the interactive prompt.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control-btn close"></span>
+              <span class="control-btn min"></span>
+              <span class="control-btn max"></span>
+            </div>
+            <div class="window-title">eswar@avit-terminal ~ (zsh)</div>
+            <div class="window-status">Live Interactive</div>
+          </div>
+
+          <div class="terminal-quick-chips">
+            <span class="chip-label">Quick Commands:</span>
+            <button class="t-chip" onclick="executeTerm('whoami')">whoami</button>
+            <button class="t-chip" onclick="executeTerm('skills')">skills</button>
+            <button class="t-chip" onclick="executeTerm('lms-demo')">lms-demo</button>
+            <button class="t-chip" onclick="executeTerm('leadership')">leadership</button>
+            <button class="t-chip" onclick="executeTerm('contact')">contact</button>
+            <button class="t-chip" onclick="executeTerm('sudo hire')">sudo hire</button>
+            <button class="t-chip" onclick="executeTerm('clear')">clear</button>
+          </div>
+
+          <div class="terminal-screen" id="termScreen">
+            <div class="term-line welcome-line">
+              <span class="term-greeting">Welcome to Eswar D's Interactive Shell v2.4</span>
+            </div>
+            <div class="term-line">
+              <span class="term-dim">Type <span class="highlight-cmd">'help'</span> or click any quick command chip above.</span>
+            </div>
+            <div class="term-line" id="termHistory"></div>
+            
+            <div class="term-prompt-row">
+              <span class="prompt-user">eswar</span><span class="prompt-at">@</span><span class="prompt-host">avit</span>:<span class="prompt-dir">~</span><span class="prompt-dollar">$</span>
+              <input type="text" id="termInput" class="term-input" autocomplete="off" spellcheck="false" placeholder="Type command here..." />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & CONNECT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="contact-card-box">
+          <div class="contact-left">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Ready to contribute to your engineering team.</h2>
+            <p class="contact-subtitle">
+              I am actively seeking full-time entry-level <strong>Software Engineer</strong> or <strong>Python Developer</strong> opportunities. 
+              Whether you have an opening, want to discuss my LMS architecture, or have an event to collaborate on, let's talk.
+            </p>
+
+            <div class="quick-contact-methods">
+              
+              <!-- Email Item with Copy Button -->
+              <div class="contact-item">
+                <div class="c-icon">✉️</div>
+                <div class="c-info">
+                  <span class="c-type">DIRECT EMAIL</span>
+                  <a href="mailto:eswareswar0101@gmail.com" class="c-link">eswareswar0101@gmail.com</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('eswareswar0101@gmail.com', this)" title="Copy email address">
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone Item with Copy Button -->
+              <div class="contact-item">
+                <div class="c-icon">📞</div>
+                <div class="c-info">
+                  <span class="c-type">PHONE / WHATSAPP</span>
+                  <a href="tel:+917449256396" class="c-link">+91 74492 56396</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('+917449256396', this)" title="Copy phone number">
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-item">
+                <div class="c-icon">📍</div>
+                <div class="c-info">
+                  <span class="c-type">LOCATION</span>
+                  <span class="c-link static">Chennai, Tamil Nadu, India (Open to Relocation &amp; Remote)</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-bar">
+              <a href="https://github.com/Eswardeva" target="_blank" rel="noopener" class="social-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>github.com/Eswardeva</span>
+              </a>
+
+              <a href="https://linkedin.com/in/eswar-d-475441379" target="_blank" rel="noopener" class="social-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn Profile</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Direct Message Form -->
+          <div class="contact-right">
+            <div class="message-card">
+              <h3 class="message-title">Send a Quick Message</h3>
+              <p class="message-subtitle">Fills directly into your default email client with one click.</p>
+              
+              <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="senderName">Your Name / Organization</label>
+                  <input type="text" id="senderName" required placeholder="e.g. Recruiters at TechCorp" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input type="email" id="senderEmail" required placeholder="name@company.com" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="senderRole">Opportunity Type</label>
+                  <select id="senderRole" class="form-input">
+                    <option value="Full-Time Software Engineer">Full-Time Software Engineer / Python Role</option>
+                    <option value="Internship / Trainee">Internship / Graduate Trainee</option>
+                    <option value="Technical Collaboration">Technical Collaboration / Project</option>
+                    <option value="Cultural / Fine Arts Collaboration">Cultural / Campus Event Speaking</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="senderMessage">Message</label>
+                  <textarea id="senderMessage" rows="4" required placeholder="Hi Eswar, we reviewed your profile and would love to schedule a discussion..." class="form-input"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <span>Send Direct Email</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="f-brand">Eswar D</span>
+        <span class="f-sub">B.E. Computer Science &amp; Engineering • AVIT Chennai (2023–2027)</span>
+      </div>
+      <div class="footer-center">
+        <a href="#hero" class="back-to-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+          <span>Back to Top</span>
+        </a>
+      </div>
+      <div class="footer-right">
+        <span class="copyright">© 2026 Eswar D. Designed with precision &amp; passion.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast-popup" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toastMsg" class="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
